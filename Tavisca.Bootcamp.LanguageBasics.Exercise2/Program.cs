@@ -46,15 +46,15 @@ namespace src
                 else if (showPostTime[i].Contains("minutes"))
                 {
                     string minutes = showPostTime[i].Split(" ")[0];
-                    DateTime NewDateTime = datetime.AddMinutes(int.Parse(minutes));
-                    string time = NewDateTime.ToString("HH:mm:ss");
+                    DateTime NewDateTime = datetime.AddMinutes(int.Parse(minutes)); // //adding minutes in Previous time
+                    string time = NewDateTime.ToString("HH:mm:ss"); //converting in 24 hour format
                     ResultString[i] = time;
                 }
                 else if (showPostTime[i].Contains("hours"))
                 {
                     string hour = showPostTime[i].Split(" ")[0];
-                    DateTime NewDateTime = datetime.AddHours(int.Parse(hour));
-                    string time = NewDateTime.ToString("HH:mm:ss");
+                    DateTime NewDateTime = datetime.AddHours(int.Parse(hour)); //adding hour in Previous time
+                    string time = NewDateTime.ToString("HH:mm:ss");//converting in 24 hour format
                     ResultString[i] = time;
                 }
                 else
