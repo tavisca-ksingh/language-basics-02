@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 
-namespace src
+namespace Tavisca.Bootcamp.LanguageBasics.Exercise1
 {
-    class Program
+    public static class Program
     {
         static void Main(string[] args)
         {
